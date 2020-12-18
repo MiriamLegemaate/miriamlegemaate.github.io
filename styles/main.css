@@ -1,0 +1,260 @@
+body {
+    background-image: url("../images/wood1.jpg");
+    font-family: 'Avenir', sans-serif;
+    color: #000000;
+    font-size: 20px;
+    margin: 0;
+}
+
+.hero-image {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery {
+    margin-bottom: 20px;
+    float: left;
+    background-color: white;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+    width: calc(33% - 10px);
+}
+
+
+.gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.gallery-description {
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E5EAEC;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+header {
+    background-color: #193233;
+    padding: 14px;
+    padding-left: 20px;
+}
+
+header h1 {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+nav {
+    font-family: 'Do Hyeon', sans-serif;
+    background-color: #193233;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    background-color: #326667;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a:link {
+    color: #ffffff;
+    text-decoration: none;
+    width: 150px;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #326667;
+}
+
+nav a:hover {
+    background-color: #666666;
+    color: #dddddd;
+}
+
+nav a:visited {
+    color: #ffffff;
+}
+
+nav a:active {
+    background-color: #112222;
+}
+
+.form {
+    padding: 280px;
+}
+
+.link_current {
+    background-color: #112222;
+}
+
+.sidebar_image {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section_fullwidth {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.contact_form {
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    background-color: #C6D6DC;
+}
+
+section {
+    width: 70%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section h1 {
+    margin-bottom: 10px;
+}
+
+aside {
+    background-color: #C6D6DC;
+    width: 30%;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+aside h1 {
+    color: #1B586D;
+}
+
+footer {
+    background-color: #A6D3E3;
+    clear: both;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: normal;
+    font-family: 'Do Hyeon', sans-serif;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: normal;
+    font-family: 'Do Hyeon', sans-serif;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+input {
+    height: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 0;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav a:link {
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    body {
+        background-image: none;
+        background-color: white;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .gallery {
+        width: calc(100% - 10px);
+    }
+
+
+    .contact_form {
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Starter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <style>
+        input:invalid {
+			background-color: white;
+		}
+		input:valid {
+			background-color: white;
+		}
+		input[type="submit"] {
+			height:auto;
+		}
+		label {
+			display: block;
+			padding-top: 8px;
+		}
+	</style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>MLEGIT DESIGNS.</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="link_current">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="section_fullwidth">
+            <div class="contact_form">
+                <h2>Contact me!</h2>
+                <form action="" method="get">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Please enter your name" required />
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <br>
+                    <label for="phone">Tel:</label>
+                    <input type="tel" name="phone" placeholder="Enter a phone number" id="phone" />
+                    <br>
+                    <label for="website">Website:</label>
+                    <input type="url" name="website" id="website" />
+                    <br>
+                    <label for="meeting">Meeting date:</label>
+                    <input type="date" name="meeting" id="meeting" />
+                    <br>
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" cols="45" rows="10"></textarea>
+                    <br>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; Miriam Legemaate 2020. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
