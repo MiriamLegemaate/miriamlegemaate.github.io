@@ -27,6 +27,11 @@ body {
     width: calc(33% - 10px);
 }
 
+.gallery-placeholder {
+    margin-bottom: 20px;
+    float: left;
+    width: calc(33% - 10px);
+}
 
 .gallery img {
     width: 100%;
